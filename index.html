@@ -620,6 +620,20 @@
 				</p>
 			</div>
 		</footer>
+		<script>
+			// exercise 4
+			window.onload = () => {
+				console.log("loaded");
+				const hideBtn = () => {
+					let btn = document.querySelectorAll(".btn-group > .btn:last-of-type");
+					console.log(btn.length);
+					btn.forEach((element) => {
+						element.innerText = "Hide";
+					});
+				};
+				hideBtn();
+			};
+		</script>
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
